@@ -14,8 +14,8 @@
 
 | Model | Dataset | Mean(Angle↔GT) | Mean(Frontal↔GT) | Net Gain | N |
 |---|---|---:|---:|---:|---:|
-| LivePortrait | BIWI | 0.82 | 0.52 | -0.30 |  |
-| LivePortrait  | LFW |  |  |  |  |
+| LivePortrait | BIWI | 0.82 | 0.52 | -0.30 | 15678 |
+| LivePortrait  | LFW | 0.66 | 0.61 | -0.4 | 13234 |
 
 **فرمول:** `Net Gain = similarity(Frontal, GT) − similarity(Angle, GT)`
 
