@@ -45,6 +45,7 @@
 > تصاویرت را در مسیرهای زیر بریز و نامشان را در README جایگزین کن.
 
 ### A) Angled → Frontal → GT (سه‌تایی نمونه)
+![Screenshot from 2025-10-07 12-44-54.png](Screenshot from 2025-10-07 12-44-54.png)
 | Angle | Frontal (مدل) | GT |
 |---|---|---|
 | ![Angle](results/angled/examples/sample1.jpg) | ![Frontal](results/frontal/examples/sample1_frontal.jpg) | ![GT](results/GT/sample1.jpg) |
