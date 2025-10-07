@@ -52,9 +52,6 @@
 ### B) Model Output Quality — LFW & BIWI
 ![Generated Image](lfw_biwi_compact.png)  
 
-| Input (Angle) | LivePortrait_mod | FSRT | FacePoke | FFWM |
-|---|---|---|---|---|
-| ![A](results/angled/examples/case1.jpg) | ![LPM](results/frontal/examples/case1_liveportrait.jpg) | ![FSRT](results/frontal/examples/case1_fsrt.jpg) | ![FP](results/frontal/examples/case1_facepoke.jpg) | ![FFWM](results/frontal/examples/case1_ffwm.jpg) |
 
 ---
 
