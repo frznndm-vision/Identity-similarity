@@ -12,12 +12,10 @@
 ## نتایج کمی
 ### 1) شباهت فرانتال در برابر زاویه‌دار نسبت به GT
 
-| Combo | Dataset | Mean(Angle↔GT) | Mean(Frontal↔GT) | Net Gain | N |
+| Model | Dataset | Mean(Angle↔GT) | Mean(Frontal↔GT) | Net Gain | N |
 |---|---|---:|---:|---:|---:|
-| RetinaFace+ResNet100 | BIWI |  |  |  |  |
-| RetinaFace+ResNet50  | BIWI |  |  |  |  |
-| SCRFD+ResNet100      | BIWI |  |  |  |  |
-| SCRFD+ResNet50       | BIWI |  |  |  |  |
+| LivePortrait | BIWI | 0.82 | 0.52 | -0.30 |  |
+| LivePortrait  | LFW |  |  |  |  |
 
 **فرمول:** `Net Gain = similarity(Frontal, GT) − similarity(Angle, GT)`
 
