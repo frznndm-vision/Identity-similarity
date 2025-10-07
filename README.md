@@ -19,23 +19,23 @@
 
 **فرمول:** `Net Gain = similarity(Frontal, GT) − similarity(Angle, GT)`
 
-### 2) شمار برنده‌ها (Winner Counts)
+
+### 2)  نتایج بهبود مدل بر شباهت (پس پردازش و پیش پردازش) 
+
+| Enhancement | Retina+R100 | SCRFD+R100 | Retina+R50 | SCRFD+R50 | N |
+|---|---|---:|---:|---:|---|---|
+| base | - | 0.519 | - | - |
+| GPFGAN | 0.565 | 0.554 | 0.528 | 0.521 |
+| sharp | 0.556 | 0.547 | 0.525 | 0.516 |
+| omit-bg | 0.82(804 Face Not Detect) | 0.499 | 0.814(804 Face Not Detect) | 0.468 |
+
+
+### 3) شمار برنده‌ها (Winner Counts)
 
 | Group | Winner | Count | Loser | Dataset | Notes |
 |---|---|---:|---|---|---|
 | Angled vs Frontal | Angle |  | Frontal | BIWI |  |
 | Angled vs Frontal | Frontal |  | Angle | BIWI |  |
-
-### 3) منابع و زمان اجرا (Resource & Runtime)
-
-| Model | Device | Batch | Avg Time (ms) | VRAM (GB) | Install | Notes |
-|---|---|---:|---:|---:|---|---|
-| LivePortrait_mod |  |  |  |  |  |  |
-| FacePoke |  |  |  |  |  |  |
-| FSRT |  |  |  |  |  |  |
-| AniPortrait |  |  |  |  |  |  |
-| scaleway/frontalization |  |  |  |  |  |  |
-| FFWM |  |  |  |  |  |  |
 
 ---
 
