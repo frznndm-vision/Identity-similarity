@@ -49,7 +49,7 @@
 
 
 
-### B) ارزیابی بصری مدل در LFW و ‌BIWI
+### B) Model Output Quality — LFW & BIWI
 ![Generated Image](lfw_biwi_compact.png)  
 
 | Input (Angle) | LivePortrait_mod | FSRT | FacePoke | FFWM |
