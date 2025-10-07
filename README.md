@@ -42,15 +42,11 @@
 ---
 
 ## نتایج کیفی (نمونه‌تصویرها)
-> تصاویرت را در مسیرهای زیر بریز و نامشان را در README جایگزین کن.
+
 
 ### A) Angled → Frontal → GT (سه‌تایی نمونه)
 ![Generated Image](AngleVsGtVsFrontal_triple.png)  
-| Angle | Frontal (مدل) | GT |
-|---|---|---|
-| ![Angle](/Screenshot from 2025-10-07 12-44-54.png) | ![Frontal](results/frontal/examples/sample1_frontal.jpg) | ![GT](results/GT/sample1.jpg) |
-| ![Angle](results/angled/examples/sample2.jpg) | ![Frontal](results/frontal/examples/sample2_frontal.jpg) | ![GT](results/GT/sample2.jpg) |
-
+ارزیابی بصری مدل در LFW و 
 ### B) مقایسهٔ چند مدل فرانتال‌سازی روی یک ورودی
 | Input (Angle) | LivePortrait_mod | FSRT | FacePoke | FFWM |
 |---|---|---|---|---|
