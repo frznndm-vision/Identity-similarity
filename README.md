@@ -46,7 +46,9 @@
 
 ### A) Angled → Frontal → GT (سه‌تایی نمونه)
 ![Generated Image](AngleVsGtVsFrontal_triple.png)  
-ارزیابی بصری مدل در LFW و 
+
+ارزیابی بصری مدل در LFW و ‌BIWI
+![Generated Image](lfw_biwi_compact.png)  
 ### B) مقایسهٔ چند مدل فرانتال‌سازی روی یک ورودی
 | Input (Angle) | LivePortrait_mod | FSRT | FacePoke | FFWM |
 |---|---|---|---|---|
