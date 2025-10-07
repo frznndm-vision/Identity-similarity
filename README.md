@@ -9,7 +9,7 @@
 
 ---
 
-## نتایج کمی
+## نتایج کمی فرانتال شده
 ### 1) شباهت فرانتال در برابر زاویه‌دار نسبت به GT
 
 | Model | Dataset | Mean(Angle↔GT) | Mean(Frontal↔GT) | Net Gain | N |
@@ -30,13 +30,15 @@
 | Omit-bg | 0.82 (804 Face Not Detect) | 0.499 | 0.814 (804 Face Not Detect) | 0.468 | 484 |
 
 
-### 3) شمار برنده‌ها (Winner Counts)
 
-| Group | Winner | Count | Loser | Dataset | Notes |
+## نتایج کمی مقایسه بهترین مدل شباهت سنجی
+### 3) نتایج مدل شباهت سنجی
+
+| Enhancement | Retina+R100 | SCRFD+R100 | Retina+R50 | SCRFD+R50 | N |
 |---|---|---:|---|---|---|
-| Angled vs Frontal | Angle |  | Frontal | BIWI |  |
-| Angled vs Frontal | Frontal |  | Angle | BIWI |  |
-
+| Angled vs GT | 0.723 | 0.740 | 0.705 | 0.726 | 15678 |
+| Angled vs Angled | 0.714 | 0.725 | 0.695 | 0.707 | 15678 |
+| GT vs GT | 0.974 | 0.971 | 0.977 | 0.975 | 15678 |
 ---
 
 ## نتایج کیفی (نمونه‌تصویرها)
