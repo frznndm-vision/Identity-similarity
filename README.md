@@ -1,18 +1,17 @@
-# Frontalization-First Benchmark (فرانتال‌سازیِ چهره در محور اصلی)
-> این مخزن با محوریت **فرانتال‌سازی چهره** سازمان‌دهی شده است تا ارزیابی‌ها و خروجی‌های شما (تصاویر/جداول) به‌صورت شفاف و قابل بازبینی کنار هم قرار بگیرند.
+# Frontalization-Face
+> این تسک با محوریت **فرانتال‌سازی چهره** انجام شده است تا ارزیابی‌ها و خروجی‌های به‌صورت شفاف و قابل بازبینی کنار هم قرار بگیرند.
 
-## خلاصهٔ اجرایی (Executive Summary)
-- **هدف اصلی:** تبدیل تصاویر زاویه‌دار به نمای روبه‌رو (Frontal) و سنجش شباهت به **GT**.
-- **سؤال کلیدی:** آیا **Frontal ↔ GT** از **Angle ↔ GT** **بهتر** است؟ در چه مدل/ترکیبی؟
-- **داده‌های معیار:** BIWI (۲۴ هویت) + در صورت نیاز LFW برای ارزیابی مکمل.
-- **مدل‌ها:** LivePortrait (نسخهٔ ادیت‌شده)، FacePoke، FSRT، AniPortrait، scaleway/frontalization، FFWM؛
-  تشخیص: RetinaFace/SCRFD، شناسایی: ResNet50/ResNet100.
+## خلاصهٔ اجرایی 
+- **هدف اصلی:** تبدیل تصاویر زاویه‌دار به نمای روبه‌رو (Frontal) به منظور بهبود میزان شباهت به **GT**.
+- **سؤال کلیدی:** آیا **Frontal ↔ GT** از **Angle ↔ GT** **بهتر** است؟ یکی از راهای ارزیابی مدل های فرانتال سازی سنجش میزان شباهت به GT است. کعه هویت فرد بعد از فرانتال سازی هم حفظ شود.
+- **داده‌های معیار:** BIWI (۲۴ هویت) +  LFW برای ارزیابی مکمل.
+- **مدل‌ها:**, LivePortrait (نسخهٔ ادیت‌شده)، FacePoke، FSRT، Face-frontalization-in-image-sequences-using-GAN-Inversion, AniPortrait، scaleway/frontalization، FFWM
 
 ---
 
-## نتایج کمی (بسپار این جدول‌ها را با خروجی خودت پر کن)
+## نتایج کمی
 ### 1) شباهت فرانتال در برابر زاویه‌دار نسبت به GT
-> فایل CSV آماده‌ی ویرایش: `results/templates/similarity_by_combo.csv`
+
 | Combo | Dataset | Mean(Angle↔GT) | Mean(Frontal↔GT) | Net Gain | N |
 |---|---|---:|---:|---:|---:|
 | RetinaFace+ResNet100 | BIWI |  |  |  |  |
@@ -23,14 +22,14 @@
 **فرمول:** `Net Gain = similarity(Frontal, GT) − similarity(Angle, GT)`
 
 ### 2) شمار برنده‌ها (Winner Counts)
-> فایل CSV: `results/templates/winner_counts.csv`
+
 | Group | Winner | Count | Loser | Dataset | Notes |
 |---|---|---:|---|---|---|
 | Angled vs Frontal | Angle |  | Frontal | BIWI |  |
 | Angled vs Frontal | Frontal |  | Angle | BIWI |  |
 
 ### 3) منابع و زمان اجرا (Resource & Runtime)
-> فایل CSV: `results/templates/runtime_profile.csv`
+
 | Model | Device | Batch | Avg Time (ms) | VRAM (GB) | Install | Notes |
 |---|---|---:|---:|---:|---|---|
 | LivePortrait_mod |  |  |  |  |  |  |
@@ -55,8 +54,6 @@
 | Input (Angle) | LivePortrait_mod | FSRT | FacePoke | FFWM |
 |---|---|---|---|---|
 | ![A](results/angled/examples/case1.jpg) | ![LPM](results/frontal/examples/case1_liveportrait.jpg) | ![FSRT](results/frontal/examples/case1_fsrt.jpg) | ![FP](results/frontal/examples/case1_facepoke.jpg) | ![FFWM](results/frontal/examples/case1_ffwm.jpg) |
-
-> نکته: می‌توانی برای هر سطر یک کیس بگذاری و مدل‌های مختلف را ستون‌ها قرار دهی.
 
 ---
 
