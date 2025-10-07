@@ -1,3 +1,72 @@
+# Frontalization-First Benchmark (فرانتال‌سازیِ چهره در محور اصلی)
+> این مخزن با محوریت **فرانتال‌سازی چهره** سازمان‌دهی شده است تا ارزیابی‌ها و خروجی‌های شما (تصاویر/جداول) به‌صورت شفاف و قابل بازبینی کنار هم قرار بگیرند.
+
+## خلاصهٔ اجرایی (Executive Summary)
+- **هدف اصلی:** تبدیل تصاویر زاویه‌دار به نمای روبه‌رو (Frontal) و سنجش شباهت به **GT**.
+- **سؤال کلیدی:** آیا **Frontal ↔ GT** از **Angle ↔ GT** **بهتر** است؟ در چه مدل/ترکیبی؟
+- **داده‌های معیار:** BIWI (۲۴ هویت) + در صورت نیاز LFW برای ارزیابی مکمل.
+- **مدل‌ها:** LivePortrait (نسخهٔ ادیت‌شده)، FacePoke، FSRT، AniPortrait، scaleway/frontalization، FFWM؛
+  تشخیص: RetinaFace/SCRFD، شناسایی: ResNet50/ResNet100.
+
+---
+
+## نتایج کمی (بسپار این جدول‌ها را با خروجی خودت پر کن)
+### 1) شباهت فرانتال در برابر زاویه‌دار نسبت به GT
+> فایل CSV آماده‌ی ویرایش: `results/templates/similarity_by_combo.csv`
+| Combo | Dataset | Mean(Angle↔GT) | Mean(Frontal↔GT) | Net Gain | N |
+|---|---|---:|---:|---:|---:|
+| RetinaFace+ResNet100 | BIWI |  |  |  |  |
+| RetinaFace+ResNet50  | BIWI |  |  |  |  |
+| SCRFD+ResNet100      | BIWI |  |  |  |  |
+| SCRFD+ResNet50       | BIWI |  |  |  |  |
+
+**فرمول:** `Net Gain = similarity(Frontal, GT) − similarity(Angle, GT)`
+
+### 2) شمار برنده‌ها (Winner Counts)
+> فایل CSV: `results/templates/winner_counts.csv`
+| Group | Winner | Count | Loser | Dataset | Notes |
+|---|---|---:|---|---|---|
+| Angled vs Frontal | Angle |  | Frontal | BIWI |  |
+| Angled vs Frontal | Frontal |  | Angle | BIWI |  |
+
+### 3) منابع و زمان اجرا (Resource & Runtime)
+> فایل CSV: `results/templates/runtime_profile.csv`
+| Model | Device | Batch | Avg Time (ms) | VRAM (GB) | Install | Notes |
+|---|---|---:|---:|---:|---|---|
+| LivePortrait_mod |  |  |  |  |  |  |
+| FacePoke |  |  |  |  |  |  |
+| FSRT |  |  |  |  |  |  |
+| AniPortrait |  |  |  |  |  |  |
+| scaleway/frontalization |  |  |  |  |  |  |
+| FFWM |  |  |  |  |  |  |
+
+---
+
+## نتایج کیفی (نمونه‌تصویرها)
+> تصاویرت را در مسیرهای زیر بریز و نامشان را در README جایگزین کن.
+
+### A) Angled → Frontal → GT (سه‌تایی نمونه)
+| Angle | Frontal (مدل) | GT |
+|---|---|---|
+| ![Angle](results/angled/examples/sample1.jpg) | ![Frontal](results/frontal/examples/sample1_frontal.jpg) | ![GT](results/GT/sample1.jpg) |
+| ![Angle](results/angled/examples/sample2.jpg) | ![Frontal](results/frontal/examples/sample2_frontal.jpg) | ![GT](results/GT/sample2.jpg) |
+
+### B) مقایسهٔ چند مدل فرانتال‌سازی روی یک ورودی
+| Input (Angle) | LivePortrait_mod | FSRT | FacePoke | FFWM |
+|---|---|---|---|---|
+| ![A](results/angled/examples/case1.jpg) | ![LPM](results/frontal/examples/case1_liveportrait.jpg) | ![FSRT](results/frontal/examples/case1_fsrt.jpg) | ![FP](results/frontal/examples/case1_facepoke.jpg) | ![FFWM](results/frontal/examples/case1_ffwm.jpg) |
+
+> نکته: می‌توانی برای هر سطر یک کیس بگذاری و مدل‌های مختلف را ستون‌ها قرار دهی.
+
+---
+
+## راهنمای اضافه‌کردن خروجی‌ها
+1) **عکس‌ها** را داخل `results/angled/examples/` و `results/frontal/examples/` و `results/GT/` کپی کن و آدرس‌ها را در جدول‌های بالا جایگزین کن.  
+2) **جداول CSV** را در مسیر `results/templates/` پر کن؛ اگر بخواهی، می‌توانیم اسکریپ‌های کوچک برای رندر خودکار این جدول‌ها به README بسازیم.
+3) اگر خواستی «Master Report» بسازیم، فایل‌های CSV را یکی کنیم و یک جدول خلاصه + نمودار اضافه کنیم.
+
+---
+
 # Identity-similarity
 ## Face Identity Similarity (شباهت هویت چهره)
 
@@ -20,6 +89,24 @@
 
 ---
 
+## Project: Benchmarking Face Frontalization and Related Models
+### مقدمه (Introduction)
+
+این پروژه بر روی **فرانتال‌سازی چهره** متمرکز است—یعنی تولید نمای روبه‌روی چهره از تصاویر ورودی غیرتمام‌رخ.
+
+از آنجا که بسیاری از مدل‌های مدرنِ **انیمیشن چهره و بازاجرای چهره** (مانند moving faces، talking heads یا انیمیشن‌های صوت‌محور) می‌توانند **فرانتال‌سازی** را هم به‌عنوان یک زیربخش انجام دهند، آن‌ها را نیز در ارزیابی وارد کردیم.
+
+### اهداف پروژه
+- **مقایسهٔ کیفیت فرانتال‌سازی** در مدل‌های متن‌باز مختلف.
+- **اندازه‌گیری شباهت** به تصاویر مرجعِ تمام‌رخ (Ground Truth).
+- **ارزیابی منابع مصرفی، زمان اجرا و پیچیدگی نصب** هر مدل.
+- **تشخیص کاربرد مناسب هر مدل**: کدام‌ها برای فرانتال‌سازی خالص بهترند و کدام‌ها برای سناریوهای تعاملی/انیمیشنی مناسب‌ترند.
+
+### یادداشت پژوهشی
+در این مسیر، برخی مدل‌ها **عملکرد بسیار ضعیفی** داشتند. به همین دلیل تصمیم گرفتیم **مدل LivePortrait** را **ویرایش** کنیم تا **هر ورودی تصویری** را فرانتال کند و خروجیِ تمام‌رخ تحویل دهد. این تسک **توسط خودِ من انجام شد** و در نتایج این مخزن منعکس شده است.
+
+---
+
 ## مدل‌ها و پس‌پردازش
 
 ### مدل‌های فرانتال‌سازی (نمونه‌های استفاده/مرجع)
@@ -35,3 +122,100 @@
 - استخراج ویژگی/شناسایی: **ResNet50**، **ResNet100**
 
 ---
+
+
+## Methodology (روش‌شناسی)
+
+### پیش‌پردازش (Pre-processing)
+> این بخش مطابق کار انجام‌شده تکمیل شده و در صورت نیاز قابل ویرایش/گسترش است.
+- تشخیص و برش چهره (Face Detection & Cropping) با آستانه‌های سازگار.
+- هم‌ترازسازی هندسی (Alignment) برای کاهش اثر زاویه/کجی صورت.
+- نرمال‌سازی روشنایی/رنگ (Normalization) و حذف نویزهای ساده.
+- آماده‌سازی ورودی برای مدل‌های فرانتال‌سازی و استخراج ویژگی.
+
+### فرانتال‌سازی (Frontalization)
+- اجرای مدل‌های منتخب (از جمله **LivePortrait** ادیت‌شده) روی تصاویر زاویه‌دار.
+- تولید خروجی‌های تمام‌رخ برای مقایسه با تصاویر مرجع (GT).
+
+### پس‌پردازش (Post-processing)
+- تصحیح‌های سبک (مثلاً حذف حاشیه‌های ناخواسته، یکنواخت‌سازی رنگ/شارپنس در حد کم).
+- اطمینان از سازگاری اندازه و کادر خروجی با ورودی‌های مرجع برای مقایسهٔ دقیق.
+
+### پروتکل ارزیابی (Evaluation Protocol)
+1) **Baseline (بدون زاویه):** محاسبهٔ شباهت روی جفت‌های GT به‌عنوان خط مبنا.  
+2) **زاویه‌دار (Angled):**
+   - سنجش **Angle ↔ GT** (همان هویت).
+   - سنجش **Angle ↔ Angle** (سازگاری درون‌زاویه‌ای).  
+3) **فرانتال‌سازی:** اعمال مدل‌های فرانتال‌سازی روی تصاویر زاویه‌دار و سنجش **Frontal ↔ GT**.  
+4) **سود خالص فرانتال‌سازی:**  
+   	`Net Gain = similarity(Frontal, GT) − similarity(Angle, GT)`  
+5) **گزارش نهایی:** میانگین‌ها، توزیع امتیازها و شمار **برنده‌ها** در مقایسه‌های دوتایی.
+
+### نکتهٔ اجرایی
+در جریان آزمایش‌ها مشاهده شد برخی مدل‌ها عملکرد مطلوبی نداشتند؛ بنابراین **مدل LivePortrait** شخصی‌سازی/ادیت شد تا **هر تصویر ورودی** را به نمای روبه‌رو تبدیل کند. این بهبود **توسط نویسندهٔ این مخزن انجام شده** و در نتایج لحاظ شده است.
+
+---
+
+## داده‌ها (Datasets)
+- **BIWI** — مجموعه‌ای با زوایای مختلف سر و **۲۴ هویت** برای سنجش شباهت در شرایط زاویه‌دار.
+- **LFW** — برای ارزیابی مکمل/عمومی شباهت هویت و تحلیل رفتار مدل‌های فرانتال‌سازی.
+
+---
+
+## مدل‌ها (Models)
+- **تشخیص چهره:** RetinaFace، SCRFD  
+- **استخراج ویژگی/شناسایی:** ResNet50، ResNet100  
+- **فرانتال‌سازی/بازاجرا:** FacePoke، LivePortrait (ادیت‌شده)، AniPortrait، FSRT، scaleway/frontalization، FFWM
+
+### ترکیب‌های مورد ارزیابی برای شباهت
+- RetinaFace + ResNet100  
+- RetinaFace + ResNet50  
+- SCRFD + ResNet100  
+- SCRFD + ResNet50
+
+---
+
+## ساختار پیشنهادی مخزن (Repository Structure)
+```
+project-root/
+├─ data/
+│  ├─ GT/                      # تصاویر مرجع
+│  ├─ Angle/                   # تصاویر زاویه‌دار
+│  ├─ gfp_detail_only/         # output.(jpg|png)
+│  ├─ identity/                # output.*, output_gfpgan_detail.*, output_gfpgan_full.*
+│  ├─ sharp_only/              # gen_before_refine_arcface.*, gen_after_refine_arcface.*, output.*
+│  └─ without_bg/              # gen_before_refine_arcface.*, gen_after_refine_arcface.*
+├─ scripts/
+│  ├─ preprocess.py            # برش/هم‌ترازسازی/نرمال‌سازی ورودی‌ها
+│  ├─ frontalize.py            # اجرای مدل‌های فرانتال‌سازی (گزینش مدل با آرگومان)
+│  ├─ extract_embeddings.py    # خروجی‌گرفتن بردارهای هویت (ResNet50/100)
+│  ├─ compute_similarity.py    # محاسبهٔ شباهت و ذخیرهٔ CSV/Parquet
+│  ├─ summarize.py             # ساخت جدول نتایج، شمارش برنده‌ها و میانگین‌ها
+│  └─ viz.py                   # نمودارها/ویژوالیزیشن
+├─ results/
+│  ├─ non_angled/              # خروجی‌ها و جداول سنجش حالت بدون زاویه
+│  ├─ angled/                  # خروجی‌ها و جداول سنجش حالت زاویه‌دار
+│  ├─ frontal/                 # خروجی‌ها و جداول سنجش حالت فرانتال‌شده
+│  └─ master/                  # جدول/گزارش تجمیعی نهایی
+└─ README.md
+```
+
+---
+
+## اجرای نمونه (Quickstart)
+```bash
+# 1) پیش‌پردازش
+python scripts/preprocess.py --in data/Angle --out data/Angle_pre --align
+
+# 2) فرانتال‌سازی (مثال: LivePortrait ادیت‌شده)
+python scripts/frontalize.py --model liveportrait_mod --in data/Angle_pre --out results/frontal/images
+
+# 3) استخراج بردار هویت (مثال: RetinaFace + ResNet100)
+python scripts/extract_embeddings.py --detector retina --backbone resnet100 --in data/ --out results/embeddings
+
+# 4) محاسبهٔ شباهت و گزارش
+python scripts/compute_similarity.py --pairs spec/pairs.yaml --emb results/embeddings --out results/metrics.csv
+python scripts/summarize.py --metrics results/metrics.csv --out results/master_report.csv
+```
+
+> نکته: اسکریپت‌ها نمونه/پیشنهادی هستند و می‌توانید مطابق کد واقعی خودتان نام پارامترها/گزینه‌ها را تنظیم کنید.
