@@ -34,7 +34,7 @@
 ## نتایج کمی مقایسه بهترین مدل شباهت سنجی
 ### 3) نتایج مدل شباهت سنجی
 
-| Enhancement | Retina+R100 | SCRFD+R100 | Retina+R50 | SCRFD+R50 | N |
+| Group | Retina+R100 | SCRFD+R100 | Retina+R50 | SCRFD+R50 | N |
 |---|---|---:|---|---|---|
 | Angled vs GT | 0.723 | 0.740 | 0.705 | 0.726 | 15678 |
 | Angled vs Angled | 0.714 | 0.725 | 0.695 | 0.707 | 15678 |
