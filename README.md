@@ -48,7 +48,7 @@
 ![Screenshot from 2025-10-07 12-44-54.png](Screenshot from 2025-10-07 12-44-54.png)
 | Angle | Frontal (مدل) | GT |
 |---|---|---|
-| ![Angle](results/angled/examples/sample1.jpg) | ![Frontal](results/frontal/examples/sample1_frontal.jpg) | ![GT](results/GT/sample1.jpg) |
+| ![Angle](/Screenshot from 2025-10-07 12-44-54.png) | ![Frontal](results/frontal/examples/sample1_frontal.jpg) | ![GT](results/GT/sample1.jpg) |
 | ![Angle](results/angled/examples/sample2.jpg) | ![Frontal](results/frontal/examples/sample2_frontal.jpg) | ![GT](results/GT/sample2.jpg) |
 
 ### B) مقایسهٔ چند مدل فرانتال‌سازی روی یک ورودی
