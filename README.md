@@ -24,10 +24,10 @@
 
 | Enhancement | Retina+R100 | SCRFD+R100 | Retina+R50 | SCRFD+R50 | N |
 |---|---|---:|---:|---:|---|---|
-| base | - | 0.519 | - | - |
-| GPFGAN | 0.565 | 0.554 | 0.528 | 0.521 |
-| sharp | 0.556 | 0.547 | 0.525 | 0.516 |
-| omit-bg | 0.82(804 Face Not Detect) | 0.499 | 0.814(804 Face Not Detect) | 0.468 |
+| base | - | 0.519 | - | - | 484 |
+| GPFGAN | 0.565 | 0.554 | 0.528 | 0.521 | 484 |
+| sharp | 0.556 | 0.547 | 0.525 | 0.516 | 484 |
+| omit-bg | 0.82(804 Face Not Detect) | 0.499 | 0.814(804 Face Not Detect) | 0.468 | 484 |
 
 
 ### 3) شمار برنده‌ها (Winner Counts)
