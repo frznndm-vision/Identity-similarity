@@ -17,6 +17,7 @@
 |---|---|---:|---:|---:|---:|
 | LivePortrait | BIWI | 0.82 | 0.52 | -0.30 | 15678 |
 | LivePortrait  | LFW | 0.66 | 0.61 | -0.4 | 13234 |
+---
 </div>
 
 **فرمول:** `Net Gain = similarity(Frontal, GT) − similarity(Angle, GT)`
@@ -31,6 +32,7 @@
 | GPFGAN | 0.565 | 0.554 | 0.528 | 0.521 | 484 |
 | Sharp | 0.556 | 0.547 | 0.525 | 0.516 | 484 |
 | Omit-bg | 0.82 (804 Face Not Detect) | 0.499 | 0.814 (804 Face Not Detect) | 0.468 | 484 |
+---
 </div>
 
 
