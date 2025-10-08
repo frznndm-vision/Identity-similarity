@@ -230,9 +230,9 @@ python scripts/summarize.py --metrics results/metrics.csv --out results/master_r
 |:--:|:--:|:--:|:--:|:--:|--|
 | FacePoke | ✓ | ✓ | [GitHub](https://github.com/jbilcke-hf/FacePoke) | ✓ | از همان مدل LivePortrait استفاده شده و به حالت یک webApp ساخته شده |
 | LivePortrait | ✓ | ✓ | [GitHub](https://github.com/KwaiVGI/LivePortrait) | ✓ | **LivePortrait:** مدل سبک و سریع برای انیمیشن پرتره با کلیدپوینت‌های ضمنی، پشتیبانی از **retargeting** و **stitching**؛ مناسب تولید حرکت روان از یک تصویر ثابت و پایهٔ خوبی برای فرانتال‌سازی.|
-| headGAN | ✓ | – | [GitHub](https://github.com/michaildoukas/headGAN) | ✓ | **headGAN:** بازاجرای چهره و ساخت آواتار ویدیویی از یک تصویر ثابت—تغییر حالت/زاویه، دیپ‌فیک کنترل‌شده و افزایش دادهٔ آموزشی. |
-| FSRT | – | – | [GitHub](https://github.com/andrerochow/fsrt) | ✓ | **FSRT:** مدل ترنسفورمری برای بازاجرای چهره که با تفکیک **ظاهر** از **هدپوز/احساسات**، حرکت را از ویدئوی محرّک به چهرهٔ منبع منتقل می‌کند (CVPR 2024). |
-| STED-gaze | – | – | [GitHub](https://github.com/zhengyuf/STED-gaze) | ✓ | دست‌کاری/تخمین نگاه (مرتبط با pose) |
+| headGAN | ✓ | ✓ | [GitHub](https://github.com/michaildoukas/headGAN) | ✓ | **headGAN:** بازاجرای چهره و ساخت آواتار ویدیویی از یک تصویر ثابت—تغییر حالت/زاویه، دیپ‌فیک کنترل‌شده و افزایش دادهٔ آموزشی. |
+| FSRT | ✓ | ✓ | [GitHub](https://github.com/andrerochow/fsrt) | ✓ | **FSRT:** مدل ترنسفورمری برای بازاجرای چهره که با تفکیک **ظاهر** از **هدپوز/احساسات**، حرکت را از ویدئوی محرّک به چهرهٔ منبع منتقل می‌کند (CVPR 2024). |
+| STED-gaze | ✓ | ✓ | [GitHub](https://github.com/zhengyuf/STED-gaze) | ✓ | دست‌کاری/تخمین نگاه (مرتبط با pose) |
 | Fantasy-Portrait | – | – | [GitHub](https://github.com/Fantasy-AMAP/fantasy-portrait) | – | پرتره‌ی مولد خلاق |
 | HunyuanPortrait | – | – | [GitHub](https://github.com/Tencent-Hunyuan/HunyuanPortrait) | – | چارچوب diffusion برای پرتره |
 | X-Portrait | – | – | [GitHub](https://github.com/bytedance/X-Portrait) | – | راهکار بایت‌دنس برای پرتره/حرکت |
