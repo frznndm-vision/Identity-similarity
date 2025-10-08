@@ -223,4 +223,8 @@ python scripts/summarize.py --metrics results/metrics.csv --out results/master_r
 
 ## Failure Cases — FFWM
 در برخی نمونه‌ها، خروجی **FFWM** دچار آرتیفکت شدید و افت هویت شد. نمونه‌ی زیر:
+
 ![ffwm-failure](ffwm_failure_title_ffwm.png)
+
+## Failure Cases — DECA
+در این ورودی، بازسازی سه‌بعدی و رندر مجدد باعث blur و artifact شده و شباهت ادراکی به GT کاهش یافته است
