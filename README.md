@@ -216,3 +216,11 @@ python scripts/compute_similarity.py --pairs spec/pairs.yaml --emb results/embed
 python scripts/summarize.py --metrics results/metrics.csv --out results/master_report.csv
 ```
 
+
+## یادداشت‌ها
+- من این مدل‌ها را هم اجرا گرفتم، اما هر کدام به دلیلی نتیجهٔ مطلوبی نداشتند و در بسیاری موارد خروجی‌ها واقعاً ضعیف (حتی «افتضاح») بود.
+
+
+## Failure Cases — FFWM
+در برخی نمونه‌ها، خروجی **FFWM** دچار آرتیفکت شدید و افت هویت شد. نمونه‌ی زیر:
+![ffwm-failure](results/figures/ffwm_failure_swapped.png)
