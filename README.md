@@ -228,3 +228,4 @@ python scripts/summarize.py --metrics results/metrics.csv --out results/master_r
 
 ## Failure Cases — DECA
 در این ورودی، بازسازی سه‌بعدی و رندر مجدد باعث blur و artifact شده و شباهت ادراکی به GT کاهش یافته است
+![DECA-failure](deca_samples.png)
