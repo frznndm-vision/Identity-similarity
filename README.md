@@ -233,7 +233,7 @@ python scripts/summarize.py --metrics results/metrics.csv --out results/master_r
 | headGAN | ✓ | ✓ | [GitHub](https://github.com/michaildoukas/headGAN) | ✓ | **headGAN:** بازاجرای چهره و ساخت آواتار ویدیویی از یک تصویر ثابت—تغییر حالت/زاویه، دیپ‌فیک کنترل‌شده و افزایش دادهٔ آموزشی. |
 | FSRT | ✓ | ✓ | [GitHub](https://github.com/andrerochow/fsrt) | ✓ | **FSRT:** مدل ترنسفورمری برای بازاجرای چهره که با تفکیک **ظاهر** از **هدپوز/احساسات**، حرکت را از ویدئوی محرّک به چهرهٔ منبع منتقل می‌کند (CVPR 2024). |
 | Fantasy-Portrait | ✓ | ✓ | [GitHub](https://github.com/Fantasy-AMAP/fantasy-portrait) | – | برای انیمیشن/reenactment طراحی شده؛ می‌شه با درایور خنثی به نمای نزدیک فرانتال رسید، اما در سناریوی فرانتال‌سازی خالص پایداری و حفظ هویت ضعیف‌تر از LivePortraitه. |
-| HunyuanPortrait | – | – | [GitHub](https://github.com/Tencent-Hunyuan/HunyuanPortrait) | – | چارچوب diffusion برای پرتره |
+| HunyuanPortrait | – | – | [GitHub](https://github.com/Tencent-Hunyuan/HunyuanPortrait) | – | **HunyuanPortrait:** مدل دیفیوشنی تنسنت برای انیمیشن/بازاجرای پرتره تک‌تصویری با کنترل **pose/expression** و تأکید بر پیوستگی زمانی و کیفیت بصری.|
 | X-Portrait | – | – | [GitHub](https://github.com/bytedance/X-Portrait) | – | راهکار بایت‌دنس برای پرتره/حرکت |
 | First-Order-Model | – | – | [GitHub](https://github.com/AliaksandrSiarohin/first-order-model) | – | پایه‌ی کلاسیک reenactment با keypoints |
 | scaleway/frontalization | – | – | [GitHub](https://github.com/scaleway/frontalization) | – | فرانتال‌سازی GAN + DALI (آموزشی) |
