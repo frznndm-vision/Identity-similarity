@@ -218,6 +218,42 @@ python scripts/summarize.py --metrics results/metrics.csv --out results/master_r
 
 
 ## یادداشت‌ها
+<div align="center">
+
+## 🔎 Related Models (Quick Scan)
+
+| Model | Code | Paper | Repo | Trainable | Short Note |
+|:--:|:--:|:--:|:--:|:--:|--|
+| FacePoke | ✓ | ✓ | [GitHub](https://github.com/jbilcke-hf/FacePoke) | ✓ | تعاملی/تولیدی؛ پایه روی vid2vid/face، مناسب دموهای زنده |
+| LivePortrait | ✓ | ✓ | [GitHub](https://github.com/KwaiVGI/LivePortrait) | ✓ | تیم سازنده با FacePoke یکی؛ انیمیشن/فرانتال‌سازی سریع |
+| AniPortrait | ✓ | ✓ | [GitHub](https://github.com/Zejun-Yang/AniPortrait/tree/main) | ✓ | صوت→انیمیشن (talking head)؛ پایهٔ مولد *(CVPR 2021)* |
+| headGAN | ✓ | – | [GitHub](https://github.com/michaildoukas/headGAN) | ✓ | بازسازی/تولید هد؛ کدنوشته قابل آموزش |
+| transformer-heads | – | – | [GitHub](https://github.com/center-for-humans-and-machines/transformer-heads?tab=readme-ov-file) | – | ایده‌های ترنسفورمری برای هد/چهره |
+| FSRT | – | – | [GitHub](https://github.com/andrerochow/fsrt) | – | reenactment با توجه به pose/احساسات/ظاهر |
+| STED-gaze | – | – | [GitHub](https://github.com/zhengyuf/STED-gaze) | – | تخمین/دستکاری نگاه؛ مرتبط با هدپوز |
+| Fantasy-Portrait | – | – | [GitHub](https://github.com/Fantasy-AMAP/fantasy-portrait) | – | پرتره‌سازی خلاق/تولیدی |
+| HunyuanPortrait | – | – | [GitHub](https://github.com/Tencent-Hunyuan/HunyuanPortrait) | – | پرتره/انیمیشن مبتنی بر Hunyuan |
+| X-Portrait | – | – | [GitHub](https://github.com/bytedance/X-Portrait) | – | راهکار بایت‌دنس برای پرتره/حرکت |
+| First-Order-Model | – | – | [GitHub](https://github.com/AliaksandrSiarohin/first-order-model) | – | کلاسیکِ reenactment با keypoint |
+| scaleway/frontalization | – | – | [GitHub](https://github.com/scaleway/frontalization) | – | GAN + DALI؛ فرانتال‌سازی کلاسیک |
+| Meta Sapiens | – | – | [GitHub](https://github.com/facebookresearch/sapiens) | – | ابزار/پژوهش متا پیرامون چهره/انسان |
+| FFWM | – | – | [GitHub](https://github.com/csyxwei/FFWM) | – | وارپ مبتنی بر optical flow؛ حساس به نور |
+| DA-GAN | – | – | [GitHub](https://github.com/YuYin1/DA-GAN) | – | روش GAN برای چهره/فرانتال |
+| TP-GAN | – | – | [GitHub](https://github.com/HRLTY/TP-GAN) | – | فرانتال‌سازی مبتنی بر GAN (دو‌مسیره) |
+| face-frontalization | – | – | [GitHub](https://github.com/dougsouza/face-frontalization) | – | ابزار فرانتال‌سازی ساده |
+| DECA | – | – | [GitHub](https://github.com/yfeng95/DECA?tab=readme-ov-file) | – | بازسازی 3DMM و رندر؛ مناسب چرخاندن pose |
+| NVLabs EG3D | – | – | [GitHub](https://github.com/NVlabs/eg3d?utm_source=chatgpt.com) | – | ژنراتور 3D-aware؛ inversion→frontal ممکن |
+| HRN | – | – | [GitHub](https://github.com/youngLBW/HRN) | – | شبکهٔ با وضوح بالا برای چهره |
+| pixel3DMM | – | – | [GitHub](https://github.com/SimonGiebenhain/pixel3dmm) | – | 3DMM پیکسلی/بازسازی چهره |
+| awesome-3d-face | – | – | [GitHub](https://github.com/winterbloooom/awesome-3d-face) | – | لیست منابع 3D Face |
+| CVTHead | – | – | [GitHub](https://github.com/HowieMa/CVTHead) | – | روش ترکیبی برای head reenactment |
+| Face-frontalization-in-image-sequences-using-GAN-Inversion | ✓ | – | [GitHub](https://<repo-url>) | ✓ | فرانتال‌سازی مبتنی بر GAN Inversion روی توالی؛ حفظ هویت/زمان |
+
+> **Note:** ستون‌های Code/Paper بر پایهٔ موجود بودن لینک‌هاست. برای **FPS/ID-sim** نتایج خودت را اضافه کن.
+
+</div>
+
+
 - من این مدل‌ها را هم اجرا گرفتم، اما هر کدام به دلیلی نتیجهٔ مطلوبی نداشتند و در بسیاری موارد خروجی‌ها واقعاً ضعیف (حتی «افتضاح») بود.
 
 
