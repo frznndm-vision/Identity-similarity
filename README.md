@@ -12,27 +12,32 @@
 ## نتایج کمی فرانتال شده
 ### 1) شباهت فرانتال در برابر زاویه‌دار نسبت به GT
 
+<div align="center">
 | Model | Dataset | Mean(Angle↔GT) | Mean(Frontal↔GT) | Net Gain | N |
 |---|---|---:|---:|---:|---:|
 | LivePortrait | BIWI | 0.82 | 0.52 | -0.30 | 15678 |
 | LivePortrait  | LFW | 0.66 | 0.61 | -0.4 | 13234 |
+</div>
 
 **فرمول:** `Net Gain = similarity(Frontal, GT) − similarity(Angle, GT)`
 
 
 ### 2)  نتایج بهبود مدل بر شباهت (پس پردازش و پیش پردازش) 
 
+<div align="center">
 | Enhancement | Retina+R100 | SCRFD+R100 | Retina+R50 | SCRFD+R50 | N |
 |---|---|---:|---:|---:|---|
 | Base | - | 0.519 | - | - | 484 |
 | GPFGAN | 0.565 | 0.554 | 0.528 | 0.521 | 484 |
 | Sharp | 0.556 | 0.547 | 0.525 | 0.516 | 484 |
 | Omit-bg | 0.82 (804 Face Not Detect) | 0.499 | 0.814 (804 Face Not Detect) | 0.468 | 484 |
+</div>
 
 
 
 ## نتایج کمی مقایسه بهترین مدل شباهت سنجی
 ### 3) نتایج مدل شباهت سنجی
+<div align="center">
 
 | Group | Retina+R100 | SCRFD+R100 | Retina+R50 | SCRFD+R50 | N |
 |---|---|---:|---|---|---|
@@ -40,23 +45,30 @@
 | Angled vs Angled | 0.714 | 0.725 | 0.695 | 0.707 | 15678 |
 | GT vs GT | 0.974 | 0.971 | 0.977 | 0.975 | 15678 |
 ---
+</div>
 تطابق هویتی
 
 «خروجیِ فرانتال‌شده با مرجعِ همان فرد (GT) شباهت بیشتری دارد تا با افراد دیگر؛ بنابراین شاید بتوان نتیجه گرفت هویت حفظ می‌شود.»
 
+<p align="center">
 ![Generated Image](ordered_similarity_uniform_spaced.png)  
+</p>
 «نمونهٔ خودش و نسخهٔ زاویه‌دار، ۰٫۷۴ شباهت دارند (≈۷۴٪).»
 
 ## نتایج کیفی (نمونه‌تصویرها)
 
 
 ### A) Angled → Frontal → GT (سه‌تایی نمونه)
+<p align="center">
 ![Generated Image](AngleVsGtVsFrontal_triple.png)  
-
+</p>
 
 
 ### B) Model Output Quality — LFW & BIWI
+
+<p align="center">
 ![Generated Image](lfw_biwi_compact.png)  
+</p>
 
 
 ---
