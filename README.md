@@ -228,7 +228,10 @@ python scripts/summarize.py --metrics results/metrics.csv --out results/master_r
 
 | Model | Code | Paper | Repo | Trainable | Short Note |
 |:--:|:--:|:--:|:--:|:--:|--|
-| FacePoke | ✓ | ✓ | [GitHub](https://github.com/jbilcke-hf/FacePoke) | ✓ | تعاملی/تولیدی؛ پایه‌ی vid2vid/face |
+| FacePoke | ✓ | ✓ | [GitHub](https://github.com/jbilcke-hf/FacePoke) | ✓ | ### FacePoke
+
+ابزار **تعاملی** برای جابه‌جایی سر و حالات چهره روی یک تصویر ثابت؛ روی **LivePortrait** سوار است و با کشیدن/کلیک (drag) حرکت تولید می‌کند. مناسب دموها و ویرایش سریع **تک‌نمونه**؛ برای فرایندهای **Batch Frontalization** خالص، گزینه‌ی ایدئال نیست.
+ |
 | LivePortrait | ✓ | ✓ | [GitHub](https://github.com/KwaiVGI/LivePortrait) | ✓ | انیمیشن/فرانتال سریع؛ retarget & stitching |
 | AniPortrait | ✓ | ✓ | [GitHub](https://github.com/Zejun-Yang/AniPortrait/tree/main) | ✓ | صوت → چهره (talking head) |
 | headGAN | ✓ | – | [GitHub](https://github.com/michaildoukas/headGAN) | ✓ | GAN برای بازسازی/تولید هد |
