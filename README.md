@@ -240,7 +240,7 @@ python scripts/summarize.py --metrics results/metrics.csv --out results/master_r
 | FFWM | ✓ | ✓ | [GitHub](https://github.com/csyxwei/FFWM) | ✓ | روش فرانتال‌سازی مبتنی بر وارپ/جریان نوری (optical flow) با ماژول‌های ویژهٔ هم‌ترازی—در نورهای نامتوازن حساس است و ممکن است آرتیفکت بدهد. |
 | DA-GAN | – | – | [GitHub](https://github.com/YuYin1/DA-GAN) | – | فرانتال‌سازی زاویه‌های بزرگ با مکانیزم **Dual-Attention** (self + face) برای حفظ هویت و جزئیات در نماهای سخت. |
 | TP-GAN | ✓ | ✓ | [GitHub](https://github.com/HRLTY/TP-GAN) | – | فرانتال‌سازیِ چهره با معماری **دو‌مسیره** (مسیر سراسری + مسیرهای محلی برای چشم/بینی/دهان) جهت حفظ هویت و جزئیات در زاویه‌های بزرگ |
-| DECA | – | – | [GitHub](https://github.com/yfeng95/DECA) | – | بازسازی/رندر 3DMM؛ مناسب صفرکردن pose |
+| DECA | – | – | [GitHub](https://github.com/yfeng95/DECA) | – | بازسازی سه‌بعدی چهره با DMM** از یک تصویر و رندر مجدد؛ امکان **صفر کردن pose** و گرفتن نمای فرانتال با حفظ ساختار هندسی. |
 | NVLabs EG3D | – | – | [GitHub](https://github.com/NVlabs/eg3d?utm_source=chatgpt.com) | – | ژنراتور 3D-aware؛ inversion → frontal |
 | HRN | – | – | [GitHub](https://github.com/youngLBW/HRN) | – | شبکهٔ وضوح‌بالای چهره |
 | pixel3DMM | – | – | [GitHub](https://github.com/SimonGiebenhain/pixel3dmm) | – | 3DMM پیکسلی/بازسازی چهره |
