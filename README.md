@@ -55,6 +55,7 @@
 «خروجیِ فرانتال‌شده با مرجعِ همان فرد (GT) شباهت بیشتری دارد تا با افراد دیگر؛ بنابراین شاید بتوان نتیجه گرفت هویت حفظ می‌شود.»
 
 <p align="center">
+  <img src="ordered_similarity_uniform_spaced.png" alt="FFWM failure">
 ![Generated Image](ordered_similarity_uniform_spaced.png)  
 </p>
 «نمونهٔ خودش و نسخهٔ زاویه‌دار، ۰٫۷۴ شباهت دارند (≈۷۴٪).»
@@ -64,6 +65,7 @@
 
 ### A) Angled → Frontal → GT (سه‌تایی نمونه)
 <p align="center">
+  <img src="AngleVsGtVsFrontal_triple.png" alt="FFWM failure">
 ![Generated Image](AngleVsGtVsFrontal_triple.png)  
 </p>
 
@@ -71,6 +73,7 @@
 ### B) Model Output Quality — LFW & BIWI
 
 <p align="center">
+  <img src="lfw_biwi_compact.png" alt="FFWM failure">
 ![Generated Image](lfw_biwi_compact.png)  
 </p>
 
