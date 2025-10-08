@@ -237,7 +237,7 @@ python scripts/summarize.py --metrics results/metrics.csv --out results/master_r
 | X-Portrait | ✓ | ✓ | [GitHub](https://github.com/bytedance/X-Portrait) | – | مدل بایت‌دنس برای بازاجرای/انیمیشن پرتره از یک تصویر ثابت با درایور ویدئویی |
 | First-Order-Model | ✓ | ✓ | [GitHub](https://github.com/AliaksandrSiarohin/first-order-model) | ✓ | مدل کلیدیِ انیمیشن تصویر با کی‌پوینت‌های یادگرفتنی و میدان حرکت چگال که یک عکس ثابت را با ویدئوی محرّک به‌صورت واقع‌گرایانه به حرکت درمی‌آورد |
 | scaleway/frontalization | ✓ | – | [GitHub](https://github.com/scaleway/frontalization) | – |  پیاده‌سازی سادهٔ فرانتال‌سازی چهره با GAN و DALI—مناسب آزمایش/آموزش، نه کیفیت تولیدی در حد مدل‌های مدرن.|
-| FFWM | – | – | [GitHub](https://github.com/csyxwei/FFWM) | – | **FFWM:** روش فرانتال‌سازی مبتنی بر وارپ/جریان نوری (optical flow) با ماژول‌های ویژهٔ هم‌ترازی—در نورهای نامتوازن حساس است و ممکن است آرتیفکت بدهد. |
+| FFWM | ✓ | ✓ | [GitHub](https://github.com/csyxwei/FFWM) | ✓ | **FFWM:** روش فرانتال‌سازی مبتنی بر وارپ/جریان نوری (optical flow) با ماژول‌های ویژهٔ هم‌ترازی—در نورهای نامتوازن حساس است و ممکن است آرتیفکت بدهد. |
 | DA-GAN | – | – | [GitHub](https://github.com/YuYin1/DA-GAN) | – | روش GAN برای چهره/فرانتال |
 | TP-GAN | – | – | [GitHub](https://github.com/HRLTY/TP-GAN) | – | فرانتال‌سازی دو‌مسیره (GAN) |
 | face-frontalization | – | – | [GitHub](https://github.com/dougsouza/face-frontalization) | – | ابزار سادهٔ فرانتال‌سازی |
