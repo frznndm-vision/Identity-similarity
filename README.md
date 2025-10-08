@@ -236,7 +236,7 @@ python scripts/summarize.py --metrics results/metrics.csv --out results/master_r
 | HunyuanPortrait | ✓ | ✓ | [GitHub](https://github.com/Tencent-Hunyuan/HunyuanPortrait) | – | **HunyuanPortrait:** مدل دیفیوشنی تنسنت برای انیمیشن/بازاجرای پرتره تک‌تصویری با کنترل **pose/expression** و تأکید بر پیوستگی زمانی و کیفیت بصری.|
 | X-Portrait | ✓ | ✓ | [GitHub](https://github.com/bytedance/X-Portrait) | – | مدل بایت‌دنس برای بازاجرای/انیمیشن پرتره از یک تصویر ثابت با درایور ویدئویی |
 | First-Order-Model | ✓ | ✓ | [GitHub](https://github.com/AliaksandrSiarohin/first-order-model) | ✓ | مدل کلیدیِ انیمیشن تصویر با کی‌پوینت‌های یادگرفتنی و میدان حرکت چگال که یک عکس ثابت را با ویدئوی محرّک به‌صورت واقع‌گرایانه به حرکت درمی‌آورد |
-| scaleway/frontalization | – | – | [GitHub](https://github.com/scaleway/frontalization) | – | فرانتال‌سازی GAN + DALI (آموزشی) |
+| scaleway/frontalization | – | – | [GitHub](https://github.com/scaleway/frontalization) | – | **scaleway/frontalization:** پیاده‌سازی سادهٔ فرانتال‌سازی چهره با GAN و DALI—مناسب آزمایش/آموزش، نه کیفیت تولیدی در حد مدل‌های مدرن.|
 | Meta Sapiens | – | – | [GitHub](https://github.com/facebookresearch/sapiens) | – | ابزار/پژوهش متا پیرامون انسان/چهره |
 | FFWM | – | – | [GitHub](https://github.com/csyxwei/FFWM) | – | وارپ مبتنی بر optical flow |
 | DA-GAN | – | – | [GitHub](https://github.com/YuYin1/DA-GAN) | – | روش GAN برای چهره/فرانتال |
