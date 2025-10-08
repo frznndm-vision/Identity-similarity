@@ -229,8 +229,7 @@ python scripts/summarize.py --metrics results/metrics.csv --out results/master_r
 | Model | Code | Paper | Repo | Trainable | Short Note |
 |:--:|:--:|:--:|:--:|:--:|--|
 | FacePoke | ✓ | ✓ | [GitHub](https://github.com/jbilcke-hf/FacePoke) | ✓ | از همان مدل LivePortrait استفاده شده و به حالت یک webApp ساخته شده |
-| LivePortrait | ✓ | ✓ | [GitHub](https://github.com/KwaiVGI/LivePortrait) | ✓ | **LivePortrait:** مدل سبک و سریع برای انیمیشن پرتره با کلیدپوینت‌های ضمنی، پشتیبانی از **retargeting** و **stitching**؛ مناسب تولید حرکت روان از یک تصویر ثابت و پایهٔ خوبی برای فرانتال‌سازی.
- |
+| LivePortrait | ✓ | ✓ | [GitHub](https://github.com/KwaiVGI/LivePortrait) | ✓ | **LivePortrait:** مدل سبک و سریع برای انیمیشن پرتره با کلیدپوینت‌های ضمنی، پشتیبانی از **retargeting** و **stitching**؛ مناسب تولید حرکت روان از یک تصویر ثابت و پایهٔ خوبی برای فرانتال‌سازی.|
 | AniPortrait | ✓ | ✓ | [GitHub](https://github.com/Zejun-Yang/AniPortrait/tree/main) | ✓ | صوت → چهره (talking head) |
 | headGAN | ✓ | – | [GitHub](https://github.com/michaildoukas/headGAN) | ✓ | GAN برای بازسازی/تولید هد |
 | transformer-heads | – | – | [GitHub](https://github.com/center-for-humans-and-machines/transformer-heads?tab=readme-ov-file) | – | ایده‌های ترنسفورمری برای هد/چهره |
