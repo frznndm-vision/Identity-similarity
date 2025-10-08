@@ -13,6 +13,7 @@
 ### 1) شباهت فرانتال در برابر زاویه‌دار نسبت به GT
 
 <div align="center">
+  
 | Model | Dataset | Mean(Angle↔GT) | Mean(Frontal↔GT) | Net Gain | N |
 |---|---|---:|---:|---:|---:|
 | LivePortrait | BIWI | 0.82 | 0.52 | -0.30 | 15678 |
@@ -26,6 +27,7 @@
 ### 2)  نتایج بهبود مدل بر شباهت (پس پردازش و پیش پردازش) 
 
 <div align="center">
+  
 | Enhancement | Retina+R100 | SCRFD+R100 | Retina+R50 | SCRFD+R50 | N |
 |---|---|---:|---:|---:|---|
 | Base | - | 0.519 | - | - | 484 |
