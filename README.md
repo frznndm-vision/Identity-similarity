@@ -229,14 +229,14 @@ python scripts/summarize.py --metrics results/metrics.csv --out results/master_r
 | Model | Code | Paper | Repo | Trainable | Short Note |
 |:--:|:--:|:--:|:--:|:--:|--|
 | FacePoke | ✓ | ✓ | [GitHub](https://github.com/jbilcke-hf/FacePoke) | ✓ | از همان مدل LivePortrait استفاده شده و به حالت یک webApp ساخته شده |
-| LivePortrait | ✓ | ✓ | [GitHub](https://github.com/KwaiVGI/LivePortrait) | ✓ | **LivePortrait:** مدل سبک و سریع برای انیمیشن پرتره با کلیدپوینت‌های ضمنی، پشتیبانی از **retargeting** و **stitching**؛ مناسب تولید حرکت روان از یک تصویر ثابت و پایهٔ خوبی برای فرانتال‌سازی.|
-| headGAN | ✓ | ✓ | [GitHub](https://github.com/michaildoukas/headGAN) | ✓ | **headGAN:** بازاجرای چهره و ساخت آواتار ویدیویی از یک تصویر ثابت—تغییر حالت/زاویه، دیپ‌فیک کنترل‌شده و افزایش دادهٔ آموزشی. |
-| FSRT | ✓ | ✓ | [GitHub](https://github.com/andrerochow/fsrt) | ✓ | **FSRT:** مدل ترنسفورمری برای بازاجرای چهره که با تفکیک **ظاهر** از **هدپوز/احساسات**، حرکت را از ویدئوی محرّک به چهرهٔ منبع منتقل می‌کند (CVPR 2024). |
+| LivePortrait | ✓ | ✓ | [GitHub](https://github.com/KwaiVGI/LivePortrait) | ✓ |  مدل سبک و سریع برای انیمیشن پرتره با کلیدپوینت‌های ضمنی، پشتیبانی از **retargeting** و **stitching**؛ مناسب تولید حرکت روان از یک تصویر ثابت و پایهٔ خوبی برای فرانتال‌سازی.|
+| headGAN | ✓ | ✓ | [GitHub](https://github.com/michaildoukas/headGAN) | ✓ | بازاجرای چهره و ساخت آواتار ویدیویی از یک تصویر ثابت—تغییر حالت/زاویه، دیپ‌فیک کنترل‌شده و افزایش دادهٔ آموزشی. |
+| FSRT | ✓ | ✓ | [GitHub](https://github.com/andrerochow/fsrt) | ✓ |  مدل ترنسفورمری برای بازاجرای چهره که با تفکیک **ظاهر** از **هدپوز/احساسات**، حرکت را از ویدئوی محرّک به چهرهٔ منبع منتقل می‌کند (CVPR 2024). |
 | Fantasy-Portrait | ✓ | ✓ | [GitHub](https://github.com/Fantasy-AMAP/fantasy-portrait) | – | برای انیمیشن/reenactment طراحی شده؛ می‌شه با درایور خنثی به نمای نزدیک فرانتال رسید، اما در سناریوی فرانتال‌سازی خالص پایداری و حفظ هویت ضعیف‌تر از LivePortraitه. |
-| HunyuanPortrait | ✓ | ✓ | [GitHub](https://github.com/Tencent-Hunyuan/HunyuanPortrait) | – | **HunyuanPortrait:** مدل دیفیوشنی تنسنت برای انیمیشن/بازاجرای پرتره تک‌تصویری با کنترل **pose/expression** و تأکید بر پیوستگی زمانی و کیفیت بصری.|
+| HunyuanPortrait | ✓ | ✓ | [GitHub](https://github.com/Tencent-Hunyuan/HunyuanPortrait) | – |  مدل دیفیوشنی تنسنت برای انیمیشن/بازاجرای پرتره تک‌تصویری با کنترل **pose/expression** و تأکید بر پیوستگی زمانی و کیفیت بصری.|
 | X-Portrait | ✓ | ✓ | [GitHub](https://github.com/bytedance/X-Portrait) | – | مدل بایت‌دنس برای بازاجرای/انیمیشن پرتره از یک تصویر ثابت با درایور ویدئویی |
 | First-Order-Model | ✓ | ✓ | [GitHub](https://github.com/AliaksandrSiarohin/first-order-model) | ✓ | مدل کلیدیِ انیمیشن تصویر با کی‌پوینت‌های یادگرفتنی و میدان حرکت چگال که یک عکس ثابت را با ویدئوی محرّک به‌صورت واقع‌گرایانه به حرکت درمی‌آورد |
-| scaleway/frontalization | ✓ | – | [GitHub](https://github.com/scaleway/frontalization) | – | **scaleway/frontalization:** پیاده‌سازی سادهٔ فرانتال‌سازی چهره با GAN و DALI—مناسب آزمایش/آموزش، نه کیفیت تولیدی در حد مدل‌های مدرن.|
+| scaleway/frontalization | ✓ | – | [GitHub](https://github.com/scaleway/frontalization) | – |  پیاده‌سازی سادهٔ فرانتال‌سازی چهره با GAN و DALI—مناسب آزمایش/آموزش، نه کیفیت تولیدی در حد مدل‌های مدرن.|
 | FFWM | – | – | [GitHub](https://github.com/csyxwei/FFWM) | – | **FFWM:** روش فرانتال‌سازی مبتنی بر وارپ/جریان نوری (optical flow) با ماژول‌های ویژهٔ هم‌ترازی—در نورهای نامتوازن حساس است و ممکن است آرتیفکت بدهد. |
 | DA-GAN | – | – | [GitHub](https://github.com/YuYin1/DA-GAN) | – | روش GAN برای چهره/فرانتال |
 | TP-GAN | – | – | [GitHub](https://github.com/HRLTY/TP-GAN) | – | فرانتال‌سازی دو‌مسیره (GAN) |
