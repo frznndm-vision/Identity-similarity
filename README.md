@@ -218,17 +218,16 @@ conda activate frontal
 # python3 -m venv .venv && source .venv/bin/activate
 
 
-<div dir="rtl">
+
 2) نصب PyTorch (با CUDA شما)
-</div>
 
 ) نصب وابستگی‌های پروژه
-<div>
+
 ) اجرای (Frontalization)
 
 نمونهٔ:
 
-</div>
+
 
 ## اجرای نمونه (Quickstart)
 ```bash
