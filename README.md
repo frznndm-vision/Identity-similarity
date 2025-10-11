@@ -6,8 +6,8 @@
 - **هدف اصلی:** تبدیل تصاویر زاویه‌دار به نمای روبه‌رو (Frontal) به منظور بهبود میزان شباهت به **GT**.
 - **سؤال کلیدی:** آیا **Frontal ↔ GT** از **Angle ↔ GT** **بهتر** است؟ یکی از راهای ارزیابی مدل های فرانتال سازی سنجش میزان شباهت به GT است. که هویت فرد بعد از فرانتال سازی هم حفظ شود.
 - **داده‌های معیار:** BIWI (۲۴ هویت) +  LFW برای ارزیابی مکمل.
-- **مدل‌ها:**, LivePortrait (نسخهٔ ادیت‌شده)، FacePoke، FSRT، Face-frontalization-in-image-sequences-using-GAN-Inversion, AniPortrait، scaleway/frontalization، FFWM
-
+- **مدل‌ها:** , LivePortrait (نسخهٔ ادیت‌شده)، FacePoke، FSRT، Face-frontalization-in-image-sequences-using-GAN-Inversion, AniPortrait، scaleway/frontalization، FFWM
+لیست کامل مدل های بررسی شده و تست شده در جدولی در یادداشت های این گزارش آوره شده است.
 ---
 
 ## نتایج کمی فرانتال شده
