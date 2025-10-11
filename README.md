@@ -197,16 +197,6 @@
 
 ## اجرای نمونه (Quickstart)
 ```bash
-# 1) پیش‌پردازش
-python scripts/preprocess.py --in data/Angle --out data/Angle_pre --align
 
 # 2) فرانتال‌سازی (مثال: LivePortrait ادیت‌شده)
 python scripts/frontalize.py --model liveportrait_mod --in data/Angle_pre --out results/frontal/images
-
-# 3) استخراج بردار هویت (مثال: RetinaFace + ResNet100)
-python scripts/extract_embeddings.py --detector retina --backbone resnet100 --in data/ --out results/embeddings
-
-# 4) محاسبهٔ شباهت و گزارش
-python scripts/compute_similarity.py --pairs spec/pairs.yaml --emb results/embeddings --out results/metrics.csv
-python scripts/summarize.py --metrics results/metrics.csv --out results/master_report.csv
-```
