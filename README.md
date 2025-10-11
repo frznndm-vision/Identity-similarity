@@ -263,11 +263,11 @@ pip install torch torchvision torchaudio
 
 ```bash
 # از ریشهٔ پروژه
+<div dir="rtl">
 python inference.py   --source_dir .../input   --source_pattern "*.png"   -o out   --frontalize 
+</div>
 ```
 
-<div dir="rtl">
 
-</div>
 
 
