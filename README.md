@@ -243,10 +243,9 @@ python scripts/summarize.py --metrics results/metrics.csv --out results/master_r
 | DECA | ✓ | ✓ | [GitHub](https://github.com/yfeng95/DECA) | ✓ | بازسازی سه‌بعدی چهره با **3DMM** از یک تصویر و رندر مجدد؛ امکان **صفر کردن pose** و گرفتن نمای فرانتال با حفظ ساختار هندسی. |
 | NVLabs EG3D | – | – | [GitHub](https://github.com/NVlabs/eg3d?utm_source=chatgpt.com) | – | ژنراتور 3D-aware؛ inversion → frontal |
 | HRN | – | – | [GitHub](https://github.com/youngLBW/HRN) | – | شبکهٔ وضوح‌بالای چهره |
-| pixel3DMM | – | – | [GitHub](https://github.com/SimonGiebenhain/pixel3dmm) | – | 3DMM پیکسلی/بازسازی چهره |
-| awesome-3d-face | – | – | [GitHub](https://github.com/winterbloooom/awesome-3d-face) | – | لیست منابع 3D Face |
-| CVTHead | – | – | [GitHub](https://github.com/HowieMa/CVTHead) | – | روش ترکیبی برای reenactment |
-| Face-frontalization-in-image-sequences-using-GAN-Inversion | – | – | – | ✓ | فرانتال‌سازی مبتنی بر **GAN Inversion** (تک‌فریم/توالی) |
+| pixel3DMM | – | – | [GitHub](https://github.com/SimonGiebenhain/pixel3dmm) | – |  بازسازی سه‌بعدی چهره با و رندرساز سازگار با نما—برای چرخاندن pose و گرفتن نمای **frontal** مفید است، ||
+| CVTHead | ✓ | ✓ | [GitHub](https://github.com/HowieMa/CVTHead) | ✓ | روش WACV 2024 برای ساخت آواتارِ سرِ قابل‌کنترل از یک تصویر واحد با *Vertex-Feature Transformer*؛ با ضرایب **3DMM** امکان کنترل صریح **pose/expression/view** را می‌دهد. |
+| Face-frontalization-in-image-sequences-using-GAN-Inversion | ✓ | – | [GitHub](https://github.com/mhahmadi258/Face-frontalization-in-image-sequences-using-GAN-Inversion) | ✓ | فرانتال‌سازی مبتنی بر **GAN Inversion** (تک‌فریم/توالی) |
 
 > **یادداشت:** ستون‌های «Code/Paper» بر اساس لینک‌های موجود شما پر شده‌اند. اگر برای هر کدام مقاله/لینک دقیق‌تری دارید، اضافه می‌کنم. همچنین لینک‌های تکراری/خراب (مثل DECA دوبار) یک‌دست شدند.
 
