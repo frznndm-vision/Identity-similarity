@@ -245,7 +245,7 @@ python scripts/summarize.py --metrics results/metrics.csv --out results/master_r
 | HRN | – | – | [GitHub](https://github.com/youngLBW/HRN) | – | شبکهٔ وضوح‌بالای چهره |
 | pixel3DMM | – | – | [GitHub](https://github.com/SimonGiebenhain/pixel3dmm) | – |  بازسازی سه‌بعدی چهره با و رندرساز سازگار با نما—برای چرخاندن pose و گرفتن نمای **frontal** مفید است، ||
 | CVTHead | ✓ | ✓ | [GitHub](https://github.com/HowieMa/CVTHead) | ✓ | روش WACV 2024 برای ساخت آواتارِ سرِ قابل‌کنترل از یک تصویر واحد با *Vertex-Feature Transformer*؛ با ضرایب **3DMM** امکان کنترل صریح **pose/expression/view** را می‌دهد. |
-| Face-frontalization-in-image-sequences-using-GAN-Inversion | ✓ | – | [GitHub](https://github.com/mhahmadi258/Face-frontalization-in-image-sequences-using-GAN-Inversion) | ✓ | فرانتال‌سازی مبتنی بر **GAN Inversion** (تک‌فریم/توالی) |
+| Face-frontalization-in-image-sequences-using-GAN-Inversion | ✓ | – | [GitHub](https://github.com/mhahmadi258/Face-frontalization-in-image-sequences-using-GAN-Inversion) | ✓ | **Face-frontalization-in-image-sequences-using-GAN-Inversion:** فرانتال‌سازی چهره در توالی تصاویر با **GAN Inversion**؛ از یک ویدئو/دنبالهٔ تک‌فریم‌ها، نمای روبه‌رو تولید می‌کند با تأکید بر **حفظ هویت** و **سازگاری زمانی** (پارامتر کم و اجرای سبک).|
 
 > **یادداشت:** ستون‌های «Code/Paper» بر اساس لینک‌های موجود شما پر شده‌اند. اگر برای هر کدام مقاله/لینک دقیق‌تری دارید، اضافه می‌کنم. همچنین لینک‌های تکراری/خراب (مثل DECA دوبار) یک‌دست شدند.
 
