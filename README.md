@@ -7,7 +7,7 @@
 - **سؤال کلیدی:** آیا <code dir="ltr">Frontal ↔ GT</code> از <code dir="ltr">Angle ↔ GT</code> **بهتر** است؟ یکی از راه‌های متداول ارزیابی مدل‌های فرانتال‌سازی، سنجش شباهت به GT است تا اطمینان حاصل شود **هویت فرد پس از فرانتال‌سازی حفظ می‌شود**.
 - **داده‌های معیار:** BIWI (۲۴ هویت) +  LFW برای ارزیابی مکمل.
 -  **مدل‌ها:** LivePortrait (نسخهٔ ادیت‌شده)، FacePoke، FSRT، Face-frontalization-in-image-sequences-using-GAN-Inversion، AniPortrait، scaleway/frontalization، FFWM.  
-  <span style="font-size:90%">(فهرست کامل مدل‌های بررسی‌شده در جدول «Related Models» انتهای این گزارش آورده شده است.)</span>
+  <span style="font-size:60%">(فهرست کامل مدل‌های بررسی‌شده در جدول «Related Models» انتهای این گزارش آورده شده است.)</span>
 ---
 
 
