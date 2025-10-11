@@ -121,13 +121,6 @@
 
 ---
 
-
-## Methodology 
-GPFGAN
-
-
----
-
 ### ترکیب‌های مورد ارزیابی برای شباهت
 - RetinaFace + ResNet100  
 - RetinaFace + ResNet50  
