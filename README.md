@@ -200,38 +200,74 @@
 ---
 ## نصب و اجرای کد (Setup & Inference)
 <div dir="rtl">
+# LivePortrait — نصب و اجرا (راهنمای سریع)
 
-### پیش‌نیازها
-- GPU انویدیا + CUDA (پیشنهادی)
-- Python 3.9 یا 3.10
-- ffmpeg
+<div dir="rtl">
 
-### 1) ایجاد محیط
+این راهنما مراحل **نصب** و **اجرای** LivePortrait را به‌صورت کوتاه ارائه می‌کند.
+
+## ۱) کلون و ساخت محیط
+
 </div>
 
 ```bash
-# با conda (پیشنهادی)
-conda create -n frontal python=3.10 -y
-conda activate frontal
----
+git clone https://github.com/KwaiVGI/LivePortrait
+cd LivePortrait
 
-# یا با venv
-# python3 -m venv .venv && source .venv/bin/activate
+# ساخت محیط پیشنهادی
+conda create -n liveportrait python=3.10 -y
+conda activate liveportrait
+
+# نصب وابستگی‌ها
+pip install -r requirements.txt
+```
+
+<div dir="rtl">
+
+## ۲) نصب PyTorch (متناسب با CUDA سیستم شما)
+
+- اگر GPU/CUDA دارید، نسخهٔ سازگار را نصب کنید.
+- اگر GPU ندارید، نسخهٔ CPU را نصب کنید.
+
+</div>
+
+```bash
+# CUDA 12.1
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+# یا CUDA 11.8
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+# یا فقط CPU
+pip install torch torchvision torchaudio
+```
+
+<div dir="rtl">
+
+## ۳) دریافت وزن‌های ازپیش‌آموزش‌داده (Pretrained Weights)
+
+- لینک‌های دانلود در README رسمی مخزن LivePortrait موجود است.
+- پوشهٔ وزن‌ها را مطابق راهنما در مسیر پروژه قرار دهید (مثلاً `pretrained_weights/`).
+
+</div>
 
 
 
-2) نصب PyTorch (با CUDA شما)
+<div dir="rtl">
 
-) نصب وابستگی‌های پروژه
-
-) اجرای (Frontalization)
-
-نمونهٔ:
+## ۴) اجرای نمونهٔ خط فرمان (Inference)
 
 
 
-## اجرای نمونه (Quickstart)
+</div>
 
-# 2) فرانتال‌سازی 
+```bash
+# از ریشهٔ پروژه
 python inference.py   --source_dir .../input   --source_pattern "*.png"   -o out   --frontalize 
+```
+
+<div dir="rtl">
+
+</div>
+
 
