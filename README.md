@@ -198,10 +198,40 @@
 ---
 </div>
 ---
+## نصب و اجرای کد (Setup & Inference)
+<div dir="rtl">
 
+### پیش‌نیازها
+- GPU انویدیا + CUDA (پیشنهادی)
+- Python 3.9 یا 3.10
+- ffmpeg
+
+### 1) ایجاد محیط
+</div>
+
+```bash
+# با conda (پیشنهادی)
+conda create -n frontal python=3.10 -y
+conda activate frontal
+
+# یا با venv
+# python3 -m venv .venv && source .venv/bin/activate
+
+<div dir="rtl">
+2) نصب PyTorch (با CUDA شما)
+</div>
+
+) نصب وابستگی‌های پروژه
+</div>
+) اجرای (Frontalization)
+
+نمونهٔ:
+
+</div>
 
 ## اجرای نمونه (Quickstart)
 ```bash
 
-# 2) فرانتال‌سازی (مثال: LivePortrait ادیت‌شده)
-python scripts/frontalize.py --model liveportrait_mod --in data/Angle_pre --out results/frontal/images
+# 2) فرانتال‌سازی 
+python inference.py   --source_dir .../input   --source_pattern "*.png"   -o out   --frontalize 
+
