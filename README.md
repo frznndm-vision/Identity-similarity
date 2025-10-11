@@ -223,7 +223,7 @@ python scripts/summarize.py --metrics results/metrics.csv --out results/master_r
 
 
 ## یادداشت‌ها
-<div align="center">
+<div align="center" dir="rtl">
 
 ## 🔎 Related Models (Full List)
 
