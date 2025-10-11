@@ -1,4 +1,5 @@
 # Frontalization-Face
+<div dir="ltr">
 > این تسک با محوریت **فرانتال‌سازی چهره** انجام شده است تا ارزیابی‌ها و خروجی‌های به‌صورت شفاف و قابل بازبینی کنار هم قرار بگیرند.
 
 ## خلاصهٔ اجرایی 
@@ -269,3 +270,4 @@ python scripts/summarize.py --metrics results/metrics.csv --out results/master_r
 <p align="center">
   <img src="deca_samples.png" alt="DECA failure">
 </p>
+ </div>
