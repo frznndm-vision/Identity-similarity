@@ -13,7 +13,7 @@
 ### 1) شباهت فرانتال در برابر زاویه‌دار نسبت به GT
 
 <div align="center">
-  
+
 | Model | Dataset | Mean(Angle↔GT) | Mean(Frontal↔GT) | Net Gain | N |
 |---|---|---:|---:|---:|---:|
 | LivePortrait | BIWI | 0.82 | 0.52 | -0.30 | 15678 |
