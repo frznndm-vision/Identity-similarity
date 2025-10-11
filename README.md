@@ -213,6 +213,7 @@
 # با conda (پیشنهادی)
 conda create -n frontal python=3.10 -y
 conda activate frontal
+---
 
 # یا با venv
 # python3 -m venv .venv && source .venv/bin/activate
