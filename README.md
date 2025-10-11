@@ -230,7 +230,6 @@ conda activate frontal
 
 
 ## اجرای نمونه (Quickstart)
-```bash
 
 # 2) فرانتال‌سازی 
 python inference.py   --source_dir .../input   --source_pattern "*.png"   -o out   --frontalize 
